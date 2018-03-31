@@ -1,0 +1,1 @@
+[{"Key":"01","Value":{"Id":"S01","Name":"Hajvágás","TaxRate":27.0}}]

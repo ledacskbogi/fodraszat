@@ -19,7 +19,7 @@ namespace FodraszatTest
             var fileUtil = new FileUtil();
 
             // Act
-            fileUtil.WriteAllText("D:\\aaaaaa\\Fodraszat\\FodraszatTest\\TestData\\testfile.txt", "\"Hello World!\" írta Bogi");
+            fileUtil.WriteAllText("~\\..\\..\\..\\..\\FodraszatTest\\TestData\\testfile.txt", "\"Hello World!\" írta Bogi");
 
             // Assert
 
@@ -32,7 +32,7 @@ namespace FodraszatTest
             var fileUtil = new FileUtil();
 
             // Act
-            var text = fileUtil.ReadAllText("D:\\aaaaaa\\Fodraszat\\FodraszatTest\\TestData\\testfile.txt");
+            var text = fileUtil.ReadAllText("~\\..\\..\\..\\..\\FodraszatTest\\TestData\\testfile.txt");
 
             // Assert
             Assert.AreEqual("\"Hello World!\" írta Bogi", text);
@@ -45,7 +45,7 @@ namespace FodraszatTest
             var fileUtil = new FileUtil();
 
             // Act
-            var text = fileUtil.ReadAllText("D:\\aaaaaa\\Fodraszat\\FodraszatTest\\TestData\\testfile0.txt");
+            var text = fileUtil.ReadAllText("~\\..\\..\\..\\..\\FodraszatTest\\TestData\\testfile0.txt");
 
             // Assert
             Assert.AreEqual(string.Empty, text);

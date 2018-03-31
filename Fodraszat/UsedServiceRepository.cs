@@ -7,7 +7,7 @@ namespace Fodraszat
 {
     public class UsedServiceRepository : IUsedServiceRepository
     {
-        private const string dataFilePath = "D:\\aaaaaa\\Fodraszat\\FodraszatTest\\TestData\\data.txt";
+        private const string dataFilePath = "~\\..\\..\\..\\..\\FodraszatTest\\TestData\\data.txt";
         private readonly IFileUtil _fileUtil;
 
         public UsedServiceRepository(IFileUtil fileUtil)
