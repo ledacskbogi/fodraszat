@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Fodraszat/bin/Debug
+/Fodraszat/obj/Debug
+/FodraszatTest/bin/Debug
+/FodraszatTest/obj/Debug
+/packages
+/WindowsFormsApplication3/bin/Debug
+/WindowsFormsApplication3/obj/Debug

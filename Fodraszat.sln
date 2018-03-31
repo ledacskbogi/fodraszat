@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fodraszat", "Fodraszat\Fodraszat.csproj", "{453CCA0A-86F5-4D68-B337-EDA2BD6E852F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FodraszatTest", "FodraszatTest\FodraszatTest.csproj", "{14211334-264C-4B1A-B18A-07EA51303B5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication3", "WindowsFormsApplication3\WindowsFormsApplication3.csproj", "{155471F0-896C-4187-86AC-0304EF31A179}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{453CCA0A-86F5-4D68-B337-EDA2BD6E852F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{453CCA0A-86F5-4D68-B337-EDA2BD6E852F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{453CCA0A-86F5-4D68-B337-EDA2BD6E852F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{453CCA0A-86F5-4D68-B337-EDA2BD6E852F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14211334-264C-4B1A-B18A-07EA51303B5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14211334-264C-4B1A-B18A-07EA51303B5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14211334-264C-4B1A-B18A-07EA51303B5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14211334-264C-4B1A-B18A-07EA51303B5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{155471F0-896C-4187-86AC-0304EF31A179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{155471F0-896C-4187-86AC-0304EF31A179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{155471F0-896C-4187-86AC-0304EF31A179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{155471F0-896C-4187-86AC-0304EF31A179}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
