@@ -17,7 +17,7 @@ namespace FodraszatTest
             var result = customerManager.GetAll();
 
             //Assert
-            Assert.AreEqual(2, result.Count);
+            Assert.AreEqual(3, result.Count);
 
         }
     }
