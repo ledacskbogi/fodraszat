@@ -48,10 +48,11 @@ namespace WindowsFormsApplication3
             useServices.Execute(customerId, new List<ServiceModel>() { new ServiceModel {  Id = serviceId, Name = txtSzolgaltatasNev.Text, TaxRate = 27 } });
 
             // TODO HF: Egy üzenet ablak ugorjon elő "Sikeres mentés!" üzenettel
+            MessageBox.Show("Sikeres mentés!");
         }
 
 
-        private void cmbSzolgaltatas_SelectedIndexChanged(object sender, EventArgs e)
+    private void cmbSzolgaltatas_SelectedIndexChanged(object sender, EventArgs e)
         {
             var serviceId = ((ComboBoxItem)cmbSzolgaltatas.SelectedItem).Value;
 
