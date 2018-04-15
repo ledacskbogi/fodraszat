@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication3
 {
-    partial class Form1
+    partial class UsedServiceForm
     {
         /// <summary>
         /// Required designer variable.
@@ -98,7 +98,7 @@
             this.cmbSzolgaltatas.TabIndex = 9;
             this.cmbSzolgaltatas.SelectedIndexChanged += new System.EventHandler(this.cmbSzolgaltatas_SelectedIndexChanged);
             // 
-            // Form1
+            // UsedServiceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -110,8 +110,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSzolgaltatasNev);
             this.Controls.Add(this.cmdSave);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "UsedServiceForm";
+            this.Text = "Szolgáltatás igénybevétele";
+            this.Load += new System.EventHandler(this.UsedServiceForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

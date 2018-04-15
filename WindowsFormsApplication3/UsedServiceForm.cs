@@ -10,9 +10,9 @@ using Fodraszat;
 
 namespace WindowsFormsApplication3
 {
-    public partial class Form1 : Form
+    public partial class UsedServiceForm : Form
     {
-        public Form1()
+        public UsedServiceForm()
         {
             InitializeComponent();
 
@@ -47,7 +47,6 @@ namespace WindowsFormsApplication3
             var useServices = new UseServices(new UsedServiceRepository(new FileUtil()));
             useServices.Execute(customerId, new List<ServiceModel>() { new ServiceModel {  Id = serviceId, Name = txtSzolgaltatasNev.Text, TaxRate = 27 } });
 
-            // TODO HF: Egy üzenet ablak ugorjon elő "Sikeres mentés!" üzenettel
             MessageBox.Show("Sikeres mentés!");
         }
 
@@ -68,5 +67,9 @@ namespace WindowsFormsApplication3
             var customer = customerManager.GetById(id);
         }
 
+        private void UsedServiceForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

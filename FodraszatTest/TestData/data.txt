@@ -1,1 +1,6 @@
-[{"Key":"01","Value":{"Id":"S01","Name":"Hajvágás","TaxRate":27.0}},{"Key":"02","Value":{"Id":"S02","Name":"Hajfestés","TaxRate":27.0}},{"Key":"01","Value":{"Id":"S01","Name":"Hajvágás","TaxRate":27.0}},{"Key":"01","Value":{"Id":"S02","Name":"Hajfestés","TaxRate":27.0}},{"Key":"Bukó Attila","Value":{"Id":"S02","Name":"Hajfestés","TaxRate":27.0}},{"Key":"Bukó Attila","Value":{"Id":"S01","Name":"Hajvágás","TaxRate":27.0}},{"Key":"Bukó Attila","Value":{"Id":"S04","Name":"Balayage Melír","TaxRate":27.0}},{"Key":"01","Value":{"Id":"S01","Name":"Hajvágás","TaxRate":27.0}},{"Key":"01","Value":{"Id":"S04","Name":"Balayage melír","TaxRate":27.0}}]
+﻿[{"Key":"01","Value":{"Id":"S01","Name":"Hajvágás","TaxRate":27.0}},
+{"Key":"02","Value":{"Id":"S02","Name":"Hajfestés","TaxRate":27.0}},
+{"Key":"01","Value":{"Id":"S01","Name":"Hajvágás","TaxRate":27.0}},
+{"Key":"01","Value":{"Id":"S02","Name":"Hajfestés","TaxRate":27.0}},
+{"Key":"01","Value":{"Id":"S01","Name":"Hajvágás","TaxRate":27.0}},
+{"Key":"01","Value":{"Id":"S04","Name":"Balayage melír","TaxRate":27.0}}]

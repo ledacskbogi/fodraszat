@@ -36,6 +36,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants\ServiceKey.cs" />
+    <Compile Include="Interfaces\IPreview.cs" />
+    <Compile Include="Preview.cs" />
     <Compile Include="FileUtil.cs" />
     <Compile Include="CustomerManager.cs" />
     <Compile Include="CreateInvoice.cs" />

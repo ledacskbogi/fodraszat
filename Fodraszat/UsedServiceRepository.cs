@@ -42,7 +42,24 @@ namespace Fodraszat
         {
             var usedServices = new List<ServiceModel>();
 
-            // TODO HF: Implementálni ide a hiányzó programkódot
+            var items = new List<KeyValuePair<string, ServiceModel>>();
+
+            // Beolvas file-ból
+            var oldJson = _fileUtil.ReadAllText(dataFilePath);
+
+            // Deszerializál
+            if (!string.IsNullOrEmpty(oldJson))
+            {
+                items = JsonConvert.DeserializeObject<List<KeyValuePair<string, ServiceModel>>>(oldJson);
+            }
+
+            foreach (var item in items)
+            {
+                if (customerId == item.Key)
+                {
+                    usedServices.Add(item.Value);
+                }
+            }
 
             return usedServices;
         }

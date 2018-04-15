@@ -11,13 +11,15 @@ namespace Fodraszat
         ICustomerManager _getCustomers;
         IGetUsedServices _getUsedServices;
         IGetPrice _getPrice;
+        IPreview _preview;
 
         
-        public CreateInvoice(ICustomerManager getCustomers, IGetUsedServices getUsedServices, IGetPrice getPrice)
+        public CreateInvoice(ICustomerManager getCustomers, IGetUsedServices getUsedServices, IGetPrice getPrice, IPreview preview)
         {
             _getCustomers = getCustomers;
             _getUsedServices = getUsedServices;
             _getPrice = getPrice;
+            _preview = preview;
         }
 
         /// <summary>  
@@ -36,12 +38,16 @@ namespace Fodraszat
             // Igénybevett szolgáltatások lekérdezése
             var usedServices = _getUsedServices.Execute(customerId);
 
+            _preview.Clear();
             Console.WriteLine("LKB Hajvágószalon                              " + foundCustomer.Name);
+            _preview.WriteLine("LKB Hajvágószalon                              " + foundCustomer.Name);
             Console.WriteLine("------------------------------------------------------------");
+            _preview.WriteLine("------------------------------------------------------------");
             foreach (var usedService in usedServices)
             {
                 var price = _getPrice.Execute(usedService.Id);
-                Console.WriteLine(usedService + "                                          " + price);
+                Console.WriteLine(usedService.Name + "                                          " + price);
+                _preview.WriteLine(usedService.Name + "                                          " + price);
             }
         }
 

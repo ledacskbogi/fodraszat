@@ -14,6 +14,10 @@ namespace Fodraszat
             {
                 return 10000;
             }
+            else if (serviceId == ServiceKey.Hajfestes) //Hajfestés
+            {
+                return 16000;
+            }
             else if (serviceId == ServiceKey.BalayageMelir) //Balayage melír
             {
                 return 20000;
@@ -22,7 +26,7 @@ namespace Fodraszat
             {
                 return 5900;
             }
-            else 
+            else
             {
                 throw new Exception("Ismeretlen szolgáltatás típus");
             }
