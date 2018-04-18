@@ -28,15 +28,6 @@ namespace WindowsFormsApplication3
             }
         }
 
-        private void CreateInvoiceForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void cmdCreateInvoice_Click(object sender, EventArgs e)
         {

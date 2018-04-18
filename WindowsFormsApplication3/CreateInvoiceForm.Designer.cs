@@ -50,7 +50,6 @@
             this.label1.Size = new System.Drawing.Size(87, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Ügyfél azonosító";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // cmdCreateInvoice
             // 
@@ -82,7 +81,6 @@
             this.Controls.Add(this.cmbUgyfel);
             this.Name = "CreateInvoiceForm";
             this.Text = "Számla készítése";
-            this.Load += new System.EventHandler(this.CreateInvoiceForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

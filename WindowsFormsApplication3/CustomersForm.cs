@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fodraszat;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,8 +18,20 @@ namespace WindowsFormsApplication3
             InitializeComponent();
         }
 
-        private void CustomersForm_Load(object sender, EventArgs e)
+        private void cmdSearch_Click(object sender, EventArgs e)
         {
+            var customerManager = new CustomerManager();
+            var customers = customerManager.GetAll();
+            var preview = new Preview(txtCustomers);
+            preview.Clear();
+            foreach (var customer in customers)
+            {
+                if (customer.Name.ToLower().Contains(txtSearch.Text.ToLower()))
+                {
+                    preview.WriteLine(customer.Id + " - " + customer.Name);
+                }
+
+            }
 
         }
     }
