@@ -62,6 +62,12 @@
     <Compile Include="CustomersForm.Designer.cs">
       <DependentUpon>CustomersForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GetUsedServicesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetUsedServicesForm.Designer.cs">
+      <DependentUpon>GetUsedServicesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ServicesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomersForm.resx">
       <DependentUpon>CustomersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetUsedServicesForm.resx">
+      <DependentUpon>GetUsedServicesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ServicesForm.resx">
       <DependentUpon>ServicesForm.cs</DependentUpon>

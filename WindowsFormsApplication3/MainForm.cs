@@ -44,5 +44,12 @@ namespace WindowsFormsApplication3
             servicesForm.MdiParent = this;
             servicesForm.Show();
         }
+
+        private void igénybevettSzolgáltatásokToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var getUsedServicesForm = new GetUsedServicesForm();
+            getUsedServicesForm.MdiParent = this;
+            getUsedServicesForm.Show();
+        }
     }
 }
