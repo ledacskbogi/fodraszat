@@ -68,6 +68,7 @@
   <ItemGroup>
     <Compile Include="CreateInvoiceTest.cs" />
     <Compile Include="GetPriceTest.cs" />
+    <Compile Include="SetPriceTest.cs" />
     <Compile Include="UsedServiceRepositoryTest.cs" />
     <Compile Include="FileUtilTest.cs" />
     <Compile Include="GetUsedServicesTest.cs" />
