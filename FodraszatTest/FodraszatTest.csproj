@@ -67,13 +67,14 @@
   </Choose>
   <ItemGroup>
     <Compile Include="CreateInvoiceTest.cs" />
+    <Compile Include="GetPriceTest.cs" />
     <Compile Include="UsedServiceRepositoryTest.cs" />
     <Compile Include="FileUtilTest.cs" />
     <Compile Include="GetUsedServicesTest.cs" />
     <Compile Include="MainTest.cs" />
     <Compile Include="UseServicesTest.cs" />
     <Compile Include="PrintCustomersTest.cs" />
-    <Compile Include="GetCustomersTest.cs" />
+    <Compile Include="CustomerManagerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

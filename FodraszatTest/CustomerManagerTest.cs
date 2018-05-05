@@ -5,7 +5,7 @@ using Fodraszat;
 namespace FodraszatTest
 {
     [TestClass]
-    public class GetCustomersTest
+    public class CustomerManagerTest
     {
         [TestMethod]
         public void ExecuteTest()
