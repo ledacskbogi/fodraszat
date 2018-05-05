@@ -58,7 +58,6 @@
             this.cmbCustomer.Name = "cmbCustomer";
             this.cmbCustomer.Size = new System.Drawing.Size(97, 21);
             this.cmbCustomer.TabIndex = 2;
-            this.cmbCustomer.SelectedIndexChanged += new System.EventHandler(this.cmbCustomer_SelectedIndexChanged);
             // 
             // GetUsedServicesForm
             // 
@@ -69,6 +68,7 @@
             this.Controls.Add(this.cmdSearch);
             this.Controls.Add(this.txtUsedServices);
             this.Name = "GetUsedServicesForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Igénybevett szolgáltatások";
             this.ResumeLayout(false);
 

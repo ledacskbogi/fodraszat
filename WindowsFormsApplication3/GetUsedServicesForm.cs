@@ -13,11 +13,18 @@ namespace WindowsFormsApplication3
 {
     public partial class GetUsedServicesForm : Form
     {
+        // GetUsedServicesForm objektum konstruktor
         public GetUsedServicesForm()
         {
+
             InitializeComponent();
 
-            //Ügyfél combo feltöltés
+            // Középre igazítjuk az ablakot
+            int x = this.DesktopBounds.Left + (this.Width - Width) / 2;
+            int y = this.DesktopBounds.Top + (this.Height - Height) / 2;
+            SetDesktopLocation(x, y);
+
+            // Ügyfél combo feltöltés
             var customerManager = new CustomerManager();
             var customers = customerManager.GetAll();
             cmbCustomer.DisplayMember = "Text";

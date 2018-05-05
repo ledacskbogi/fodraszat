@@ -118,7 +118,8 @@
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
+            // Ráakasztjuk (feliratkoztatjuk) az eseményre az eseménykezelő eljárást
+            this.Resize += new System.EventHandler(this.MainForm_Resize);
         }
 
         #endregion
