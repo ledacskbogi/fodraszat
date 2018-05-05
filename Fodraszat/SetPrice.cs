@@ -22,6 +22,8 @@ namespace Fodraszat
         {
             //price.txt nevű fájlba kell kiírni json formátumban
             // a szerializálandó objektum egy List<keyvaluepair<string, int>>, ahol a key a serviceId, a value pedig a price
+
+            // TODO: Át kell írni az egész eljárást hogy Dictionary legyen a List helyett
             var items = new List<KeyValuePair<string, int>>();
 
             // Beolvas file-ból (akorábban kiírt árak beolvasása file-ból)
@@ -34,7 +36,7 @@ namespace Fodraszat
             }
 
             // Amennyiben a régiek között nincsen, hozzáadja az új elemet
-            var foundItems = items.Where(x => x.Key == serviceId).ToList();
+            var foundItems = items.Where(x => x.Key == serviceId).ToList(); // TODO: Ez is át lesz írva
             if (foundItems.Count == 1)
             {
                 // Van találat tehát felülírjuk a régi árat
