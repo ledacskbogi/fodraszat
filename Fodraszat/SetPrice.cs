@@ -20,11 +20,7 @@ namespace Fodraszat
         // Ez van a Save helyett, ez hajtja végre a file-ba való írást
         public void Execute(string serviceId, int price)
         {
-            //price.txt nevű fájlba kell kiírni json formátumban
-            // a szerializálandó objektum egy List<keyvaluepair<string, int>>, ahol a key a serviceId, a value pedig a price
-
-            // TODO: Át kell írni az egész eljárást hogy Dictionary legyen a List helyett
-            var items = new List<KeyValuePair<string, int>>();
+            var items = new Dictionary<string, int>();
 
             // Beolvas file-ból (akorábban kiírt árak beolvasása file-ból)
             var oldJson = _fileUtil.ReadAllText(dataFilePath);
@@ -32,26 +28,25 @@ namespace Fodraszat
             // Deszerializál
             if (!string.IsNullOrEmpty(oldJson))
             {
-                items = JsonConvert.DeserializeObject<List<KeyValuePair<string, int>>>(oldJson);
+                try
+                {
+                    items = JsonConvert.DeserializeObject<Dictionary<string, int>>(oldJson);
+                }
+                catch (Exception)
+                {
+                    throw new Exception("Sérült az adatfile!");
+                }
             }
 
             // Amennyiben a régiek között nincsen, hozzáadja az új elemet
-            var foundItems = items.Where(x => x.Key == serviceId).ToList(); // TODO: Ez is át lesz írva
-            if (foundItems.Count == 1)
+            if (items.ContainsKey(serviceId))
             {
-                // Van találat tehát felülírjuk a régi árat
-                
-                // TODO Befejezni, Bogikám!
-
-            }
-            else if (foundItems.Count == 0)
-            {
-                // Nincs találat tehát hozzáadjuk az új elemet
-                items.Add(new KeyValuePair<string, int>(serviceId, price));
+                items[serviceId] = price;
             }
             else
             {
-                throw new Exception("Sérült az adatfile!");
+                // Nincs találat tehát hozzáadjuk az új elemet
+                items.Add(serviceId, price);
             }
 
             // Szerializál (abban már benne vannak az új ár és a meglévő árak is együttesen)
